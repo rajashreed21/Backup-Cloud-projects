@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> User Object</title>
+    <script>
+        let user = {
+        name: "John Doe",
+        email: "john.doe@example.com",
+        age: 30
+        };
+        
+        function changeName(newUser) {
+        user.name = newUser;
+        }
+        function updateEmail(newEmail) {
+        user.email = newEmail;
+        }
+        
+        function calculateBirthYear() {
+        let currentYear = new Date().getFullYear();
+        return currentYear - user.age;
+        }
+
+// Example usage
+console.log("Original user:", user);
+changeName("Jane Smith");
+updateEmail("jane.smith@example.com");
+console.log("Modified user:", user);
+console.log("User's birth year:", calculateBirthYear());
+</script>
+</head>
+</html>
+
+        
